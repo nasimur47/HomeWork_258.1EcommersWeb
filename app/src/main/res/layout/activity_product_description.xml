@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".productDescription"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/list_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        >
+
+        <TextView
+            android:id="@+id/pTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IPhone"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/pImage"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:src="@drawable/google"
+            android:layout_margin="20dp"
+            />
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Neumorph.CardView"
+            app:neumorph_shapeType="pressed">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#FF5722"
+            >
+
+        <TextView
+            android:id="@+id/pPrize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$500"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/discountPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$500"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$500"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$500"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
+
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Description"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:gravity="center"
+            />
+
+
+        <TextView
+            android:id="@+id/pDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The iPhone is a smartphone made by Apple that combines a computer, iPod, digital camera and cellular "
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:gravity="center"
+            />
+
+
+        <TextView
+            android:id="@+id/brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$500"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$500"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:gravity="center"
+            />
+
+
+        <TextView
+            android:id="@+id/pPrize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/add_to_cart_bg"
+            android:gravity="center"
+            android:text="Add to Cart"
+            android:textColor="#000"
+            android:textSize="25dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

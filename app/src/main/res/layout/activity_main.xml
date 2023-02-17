@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_login"
+    android:orientation="vertical">
+
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/edittext_card"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:neumorph_shapeType="flat">
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:hint=" Enter User Name"
+            android:singleLine="true" />
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/password"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:neumorph_shapeType="flat">
+
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:hint="Enter Password"
+            android:singleLine="true" />
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:neumorph_shapeType="flat">
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Login"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+
+            />
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot your Password ?"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+       android:gravity="center"
+        android:layout_marginTop="10dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <soup.neumorphism.NeumorphCardView
+
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:neumorph_shapeType="flat"
+        >
+
+      <ImageView
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:src="@drawable/facebook"
+          />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="FACEBOOK"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/background_login"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+
+    <soup.neumorphism.NeumorphCardView
+
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:neumorph_shapeType="flat"
+        >
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/google"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="google"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/background_login"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+    </soup.neumorphism.NeumorphCardView>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Don't Have account ? Sign up "
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#000"
+        />
+
+
+</LinearLayout>
